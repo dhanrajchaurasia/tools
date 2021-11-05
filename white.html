@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #sun,
+    #moon, 
+    #heading {
+        cursor: pointer;
+        font-weight: 500;
+        color: #000;
+        font-size: 50px;
+    }
+    #sun {
+        color: #fff;
+        display: none;
+    }
+</style>
+
+<body class="area">
+    <div id="theme">
+        <div id="heading" onclick="makeClicked()">Dark Theme</div>
+        <i class="fa fa-moon-o" aria-hidden="true" onclick='changeTheme("dark")' id="moon" name="moon"></i>
+        <i class="fa fa-sun-o" aria-hidden="true" onclick='changeTheme("light")' id="sun" name="sun"></i>
+    </div>
+    <script>
+        var sun = document.getElementById('sun');
+        var moon = document.getElementById('moon');
+        var bg = document.getElementsByClassName('area');
+        function makeClicked()
+        {
+            var heading = document.getElementById('heading');
+            if (heading.innerHTML == "Dark Theme")
+                moon.click();
+            else
+                sun.click();
+        }
+        function changeTheme(e) {
+            if (e === "light") {
+                // Light Theme
+                sun.style.display = 'none';
+                moon.style.display = 'block';
+                bg[0].style.background = "#fff";
+                document.getElementById('heading').style.color = "#000";
+                document.getElementById('heading').innerHTML = "Dark Theme";
+            }
+            else {
+                // Dark Theme
+                moon.style.display = 'none';
+                sun.style.display = 'block';
+                bg[0].style.background = "#000";                
+                document.getElementById('heading').style.color = "#fff";
+                document.getElementById('heading').innerHTML = "Light Theme";
+            }
+        }
+    </script>
+</body>
+
+</html>
