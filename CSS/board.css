@@ -1,8 +1,6 @@
-
     #sun,
     #moon, 
     #heading {
-        font-family:  Arial;
        text-align: center;
         cursor: pointer;
         font-weight: 500;
@@ -15,6 +13,8 @@
     }
     button{
         width: 200px;
-        height: 50px;
+        height: 70px;
+        padding: 10px;
         color: #fff;
+        margin: 20px;
     }
