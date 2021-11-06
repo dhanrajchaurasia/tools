@@ -2,6 +2,8 @@
     #sun,
     #moon, 
     #heading {
+        font-family:  Arial;
+       text-align: center;
         cursor: pointer;
         font-weight: 500;
         color: #fff;
