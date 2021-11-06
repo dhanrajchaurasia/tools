@@ -1,4 +1,4 @@
-<h1 align="center"> :star2: Tools </h1>
+<h1 align="center"> :star2: <a href="https://dhanrajchaurasia.github.io/tools/">Tools</a></h1>
 <p align="center"> A Toolkit that is useful in competitive programming and gerneral perposes.
 
 <h2 align="left"> :star2: Features </h2>
