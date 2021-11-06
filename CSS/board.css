@@ -1,20 +1,20 @@
-    #sun,
-    #moon, 
-    #heading {
-       text-align: center;
-        cursor: pointer;
-        font-weight: 500;
-        color: #fff;
-        font-size: 20px;
-    }
-    #sun {
-        color: #000;
-        display: none;
-    }
-    button{
-        width: 200px;
-        height: 70px;
-        padding: 10px;
-        color: #fff;
-        margin: 20px;
-    }
+#sun,
+#moon, 
+#heading {
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+}
+#sun {
+    color: #000;
+    display: none;
+}
+button{
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    color: #fff;
+    margin: 16px;
+}
